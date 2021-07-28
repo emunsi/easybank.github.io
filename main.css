@@ -28,6 +28,7 @@ a {
 /*Header*/
 
 header {
+    z-index:10;
     display: flex;
     background: var(--white);
     height: 67px;
@@ -107,33 +108,33 @@ header {
 
 .mobile-menu {
     display: none;
+    background: var(--white);
+    width: 80%;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    padding: 1.5em 0;
+    z-index:3;
+    border-radius: 10px;
     /*Zeigt die Mobile Request nicht*/
 }
 
-.mobile-navlinks {
-    padding: 1.5em;
-    display: flex;
-    background: crimson;
-    position: absolute;
-    width: 80%;
-    flex-direction: column;
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    align-items: center;
-    top: 500px;
-    left: -40px;
-}
 
+.mobile-menu ul {
+    margin:auto;
+    justify-content:center;
+}
 .mobile-navlinks li {
-    padding: 0.5em 0;
+    text-align:center;
+    padding: 0.9em 0;
     list-style: none;
     margin: auto;
 }
 
 .mobile-navlinks a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--grayishblue);
+    font-size: var(--fontsize);
 }
 
 .burger {
@@ -153,6 +154,5 @@ header {
     }
     .burger {
         display: inline-flex;
-        background: chartreuse;
     }
 }
