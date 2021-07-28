@@ -8,6 +8,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Frontend Mentor | Easybank landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -24,32 +25,52 @@
 </head>
 
 <body>
-    <section class="hero">
-        <nav>
-            <div class="row">
-                <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
-                <div class="navlinks">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="index.html">Contact</a></li>
-                        <li><a href="index.html">Blog</a></li>
-                        <li><a href="index.html">Careers</a></li>
-                    </ul>
-                </div>
-                <a href="index.html" class="request-invite">Request Invite</a>
+    <header class="header">
+        <div class="row">
+
+            <a class="logo" href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+
+            <nav class="desktop-menu">
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="index.html">Careers</a></li>
+                </ul>
+            </nav>
+
+
+            <a href="index.html" class="request-invite">Request Invite</a>
+            <div class="burger">
+                <i class="fas fa-bars fa-2x icons"></i>
             </div>
 
-        </nav>
 
+            <nav class="mobile-menu show">
+
+                <ul class="mobile-navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="index.html">Careers</a></li><i class="fas fa-times "></i>
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="hero">
         <div class="hero-col">
             <h1>Next generation digital banking</h1>
             <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
             <a href="index.html" class="request-invite">Request Invite</a>
         </div>
         <div class="hero-col">
-            <img src="images/image-mockups.png" alt="">
-            <img src="images/bg-intro-desktop.svg" alt="">
+            <img src="#" alt="">
+            <img src="#" alt="">
         </div>
 
     </section>

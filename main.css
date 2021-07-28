@@ -16,37 +16,51 @@
     font-family: 'Public Sans', sans-serif;
 }
 
-.hero {
-    width: 100%;
-    background: var(--lightgray);
+li {
+    list-style: none;
 }
 
-nav {
-    flex-direction: row;
+a {
+    text-decoration: none;
+}
+
+
+/*Header*/
+
+header {
+    display: flex;
     background: var(--white);
+    height: 67px;
 }
 
 .row {
     margin: auto;
     display: flex;
     width: 80%;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
 }
 
-.navlinks img {
-    justify-content: center;
-    align-items: center;
+.logo {
+    display: flex;
+    justify-content: flex-start;
 }
 
-.navlinks ul li {
-    flex-basis: 1;
-    list-style: none;
-    display: inline-block;
-    padding: 1em;
+.hero {
+    width: 100%;
+    background: var(--lightgray);
 }
 
-.navlinks ul li::after {
+.navlinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.navlinks li {
+    margin: 0 1em;
+}
+
+.navlinks li::after {
     /*Musst Klasse machen damit es nicht bei allen übernimmt*/
     content: '';
     width: 0%;
@@ -54,19 +68,23 @@ nav {
     margin: auto;
     display: block;
     position: relative;
-    top: 1em;
-    background: var(--limegreen);
+    top: 1.3em;
+    background: linear-gradient(to right, var(--brightcyan), var(--limegreen));
     transition: 0.5s;
 }
 
-.navlinks ul li:hover::after {
+.navlinks li:hover::after {
     width: 100%;
 }
 
-* .navlinks ul li a {
+.navlinks a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: var(--grayishblue);
     font-size: var(--fontsize);
+    align-items: center;
+    justify-content: center;
 }
 
 .request-invite {
@@ -77,8 +95,64 @@ nav {
     padding: 0.5em 1.5em;
 }
 
+
+/*---------------------Mobile---------------------*/
+
+.desktop-menu {
+    display: flex;
+    justify-content: center;
+    display: block;
+    /*Zeigt die Mobile Request nicht*/
+}
+
+.mobile-menu {
+    display: none;
+    /*Zeigt die Mobile Request nicht*/
+}
+
+.mobile-navlinks {
+    padding: 1.5em;
+    display: flex;
+    background: crimson;
+    position: absolute;
+    width: 80%;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    top: 500px;
+    left: -40px;
+}
+
+.mobile-navlinks li {
+    padding: 0.5em 0;
+    list-style: none;
+    margin: auto;
+}
+
+.mobile-navlinks a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.burger {
+    display: none;
+}
+
 @media (max-width:500px) {
-    .row {
-        flex-direction: column;
+    /*Desktop - Navbar */
+    .desktop-menu {
+        display: none;
+    }
+    .request-invite {
+        display: none;
+    }
+    .mobile-menu {
+        display: inline-flex;
+    }
+    .burger {
+        display: inline-flex;
+        background: chartreuse;
     }
 }
