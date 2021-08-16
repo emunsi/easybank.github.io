@@ -353,9 +353,41 @@ main {
 /*===============================FOOTER===============================*/
 
 .footer {
+    padding: 3em 0;
     background: var(--darkblue);
 }
 
-svg {
-    fill: var(--white);
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    margin-top: 4em;
+}
+
+.icons a {
+    margin: 0 0.2em;
+}
+
+.footer-link {
+    color: var(--white);
+}
+
+.footer-links li {
+    margin: 1em 0;
+}
+
+.footer-invite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-invite p {
+    padding-top: 3em;
+    color: var(--grayishblue);
 }
