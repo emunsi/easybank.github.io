@@ -394,3 +394,31 @@ header {
     padding-top: 3em;
     color: var(--grayishblue);
 }
+
+
+/*===============================MOBILE===============================*/
+
+@media(max-width: 700px) {
+    .hero-content {
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: var(--fontsize)/2;
+    }
+    .hero {
+        /*background-image: url(./images/bg-intro-mobile.svg);*/
+        flex-direction: column-reverse;
+    }
+    .hero-images {
+        position: absolute;
+    }
+    .hero-images img {
+        left: 50%;
+        position: relative;
+        bottom: -1.7rem;
+        width: auto;
+    }
+}
