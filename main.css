@@ -214,7 +214,7 @@ header {
 
 .hero-images {
     width: 100%;
-    height:100%;
+    height: 100%;
     position: absolute;
     background: none;
     z-index: 2;
@@ -231,8 +231,8 @@ header {
     text-align: left;
     padding: 0;
     margin: auto;
-    width:80%;
-    z-index:5;
+    width: 80%;
+    z-index: 5;
 }
 
 .hero-content a {
